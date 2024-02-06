@@ -17,6 +17,10 @@ namespace IQF.DataAccess.Configurations
                 WithMany(e => e.Games).
                 HasForeignKey(g => g.EventId);
 
+            builder.
+                HasMany(g => g.Teams).
+                WithMany(t => t.Games);
+
         }
     }
 }

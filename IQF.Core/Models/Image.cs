@@ -7,6 +7,6 @@ namespace IQF.Core.Models
 
         public string FileName { get; set; } = string.Empty;
 
-        public FileStream? FileStream { get; set; }
+        //public FileStream? FileStream { get; set; }
     }
 }

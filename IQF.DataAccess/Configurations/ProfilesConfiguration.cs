@@ -14,7 +14,8 @@ namespace IQF.DataAccess.Configurations
             // Связь один к одному.
             builder.
                 HasOne(p => p.User).
-                WithOne(u => u.Profile);
+                WithOne(u => u.Profile).
+                HasForeignKey<Profiles>(p  => p.UsersId);
 
             //Связь многие ко многим.
             builder.

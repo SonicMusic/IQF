@@ -3,6 +3,8 @@ namespace IQF.Core.Models
 {
     public class RoomProfiles
     {
+        public Guid Id { get; set; }
+        
         public Guid ProfilesId { get; set; }
         public Profiles? Profile { get; set; }
 
